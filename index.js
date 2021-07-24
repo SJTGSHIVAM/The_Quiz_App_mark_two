@@ -75,80 +75,131 @@ function levelplay(qarray) {
 
 const ynQuestions = [
   {
-    question: "Do I watch sports? ",
+    question:
+      "Sheldon works as a senior theoretical physicist at The California Institute of Technology.Do I watch sports? ",
+    answer: ["No", "Yes"],
+    correct: 1,
+    weitgh: 1,
+    type: "normal",
+    wrongAlert: "Yes ",
+    id: 2,
+  },
+  {
+    question: "Sheldon worked in the field of particle physics.",
+    answer: ["No", "Yes"],
+    correct: 1,
+    weitgh: 1,
+    type: "normal",
+    wrongAlert: "Yes ",
+    id: 3,
+  },
+  {
+    question:
+      " The character of Amy Farrah Fowler was written as a neuroscientist because Mayim Bialik was actually a neuroscientist.",
+    answer: ["No", "Yes"],
+    correct: 2,
+    weitgh: 2,
+    type: "bonus",
+    wrongAlert: "Yes ",
+    id: 4,
+  },
+  {
+    question: "The show 'The Big Bang Theory' takes place in NYC",
+    answer: ["No", "Yes"],
+    correct: 0,
+    weitgh: 2,
+    type: "bonus",
+    wrongAlert: "No",
+    id: 5,
+  },
+  {
+    question: "What was Howard's qualification? B.Eng, Aerospace Engineer.",
     answer: ["No", "Yes"],
     correct: 0,
     weitgh: 1,
     type: "normal",
-    wrongAlert: "No I usually dont!",
-    id: 1,
+    wrongAlert: "No",
+    id: 6,
   },
 ];
 const l2Questions = [
   {
-    question: "Which city do i live in? ",
-    answer: ["Kashipur", "Moradabad", "Chamoli", "Ramnagar"],
+    question: "What does Sheldon mean when he uses the catchphrase Bazinga!? ",
+    answer: ["Gotcha!", "I'm Here!", "Correct!", "Hello!"],
     correct: 0,
     weitgh: 1,
     type: "normal",
-    wrongAlert: "kashipur",
+    wrongAlert: "Gotcha!",
     id: 1,
   },
 
   {
-    question: "What is an impossible thing that I want to do ",
-    answer: ["Eat whole day", "drink 7 litres of water", "Fly", "Be a ghost"],
-    correct: 2,
+    question: "What word does Sheldon Cooper use to refer to a sex?",
+    answer: ["Sexual Relations", "Interacting", "Collaborating", "Coitus"],
+    correct: 3,
     weitgh: 2,
     type: "bonus",
-    wrongAlert: "I wish I could fly",
+    wrongAlert: "Its coitus.",
     id: 2,
   },
 
   {
-    question: "who is my favourite Animated character? ",
-    answer: ["Shinchan", "Avatar", "Doraemon", "Nobita"],
+    question: "What song is used to soothe sick Sheldon? ",
+    answer: ["Little Ball of Fur", "Soft Kitty", "Warm Kitty", "Little Kitty"],
     correct: 1,
     weitgh: 2,
     type: "bonus",
-    wrongAlert: "Avatar form 'Avatar the last air bender'",
+    wrongAlert:
+      "Soft kitty is the one. it goes like soft kitty warm kitty little ball of fur \n happy kitty sweety kitty pur pur pur",
     id: 3,
   },
 
   {
-    question: "Who is my favourite color? ",
-    answer: ["green", "blue", "yellow", "red"],
-    correct: 2,
+    question: "Which superhero appears to be Sheldon Cooper's favorite?",
+    answer: ["The Flash", "The Hulk", "Superman", "Spiderman"],
+    correct: 0,
     weitgh: 1,
     type: "normal",
-    wrongAlert: "Its red",
+    wrongAlert: "Its flash. He keeps acting like that.",
     id: 4,
   },
   {
-    question: "Who is my second favourite color? ",
-    answer: ["pink", "yellow", "green", "red"],
-    correct: 0,
+    question:
+      "What is the real reason Sheldon knocks three times before entering a room?",
+    answer: [
+      "Sheldon's OCD",
+      "Sheldon's scared because his dad beat him.",
+      "Sheldon is announcing himself.",
+      "Sheldon caught his dad cheating.",
+    ],
+    correct: 3,
     weitgh: 1,
     type: "normal",
-    wrongAlert: "Its red",
+    wrongAlert: "Sheldon caught his dad cheating is the right answer.",
     id: 5,
   },
   {
-    question: "Which instrument I am learning to play? ",
-    answer: ["ukelele", "flute", "saxophone", "Banjo"],
-    correct: 0,
+    question: "How does Sheldon really feel about Howard Wolowitz?  ",
+    answer: [
+      "Sheldon despises Howard.",
+      "Sheldon doesn't care if Howard is around, or not.",
+      "Sheldon feels Howard is a treasured acquaintance.",
+      "Sheldon thinks highly of Howard's work.",
+    ],
+    correct: 2,
     weitgh: 1,
     type: "normal",
-    wrongAlert: "Ukelele",
+    wrongAlert: "Howard is a treasured acquaintance.",
     id: 6,
   },
   {
-    question: "where was my college located",
-    answer: ["Delhi", "Gopeshwar", "Mars", "Kashipur"],
+    question:
+      "What does Sheldon buy when he and Amy terminate their relationship in season four?",
+    answer: ["Five new comics", "Five Cats", "A blowup Doll", "A koala"],
     correct: 1,
     weitgh: 1,
     type: "normal",
-    wrongAlert: "Its red",
+    wrongAlert: "Cats are love.",
     id: 7,
   },
 ];
@@ -179,6 +230,3 @@ console.log("   NAME" + "\t\t" + "SCORE");
 scroreBoard.map((player) => {
   console.log(player.name + "\t\t" + player.score);
 });
-// for( var i = 0; i < scoreBoardArray.length; i++) {
-//   console.log(i+1 + '. ' + scoreBoardArray[i].name + "\t" +  scoreBoardArray[i].score)
-// }
