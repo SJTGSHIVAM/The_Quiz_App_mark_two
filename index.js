@@ -20,10 +20,10 @@ if (!scroreBoard) {
 let userName = readlineSync.question("PLEASE ENTER YOUR NAME: ");
 
 console.log(
-  chalk.blue("\nWELCOME " + userName.toUpperCase() + " TO - GET TO KNOW ME\n")
+  chalk.blue("\nWELCOME " + userName.toUpperCase() + " TO - DO YOU KNOW BBT\n")
 );
 
-console.log(chalk.red("A SIMPLE QUIZ TO GET TO KNOW ME BETTER. LET'S START!"));
+console.log(chalk.red("A SIMPLE QUIZ AROUND BBT. LET'S START!"));
 
 console.log(chalk.blue("\nRULES:"));
 console.log(
