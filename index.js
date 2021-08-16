@@ -57,7 +57,7 @@ function play({ question, answer, correct, weitgh, type, wrongAlert }) {
   console.log("-------------X-------------");
 }
 
-function levelplay(qarray) {
+function levelplay_old(qarray) {
   let qal = qarray.length;
   let prevQ = new Set();
   let possibleQ;
@@ -70,6 +70,21 @@ function levelplay(qarray) {
       }
     }
     play(qarray[possibleQ]);
+  }
+}
+
+function levelplay(qarray) {
+  let qal = qarray.length;
+  let temparr = [...qarray];
+
+  // let prevQ = new Set();
+  let possibleQ;
+  for (var i = 0; i < 5; i++) {
+    possibleQ = Math.floor(Math.random() * qal);
+
+    play(temparr[possibleQ]);
+    temparr.splice(possibleQ, 1);
+    qal = qal - 1;
   }
 }
 
