@@ -1,6 +1,6 @@
 **Description** This is a short quiz on Big Band theory developed in nodeJS.
 
-**Live Link** :
+**Live Link** : https://replit.com/@SHIVAMPANDEY22/TheQuizAppmarktwo?output=1&embed=1#index.js
 
 **Run Command**: `node index.js`
 
