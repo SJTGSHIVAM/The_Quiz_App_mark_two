@@ -61,7 +61,7 @@ function levelplay(qarray) {
   let qal = qarray.length;
   let prevQ = new Set();
   let possibleQ;
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 5; i++) {
     while (true) {
       possibleQ = Math.floor(Math.random() * qal);
       if (!prevQ.has(possibleQ)) {
